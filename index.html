@@ -1,0 +1,167 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kavin — Cyber Security Student | Portfolio</title>
+  <meta name="description" content="Kavin | Cyber Security Student at Mahendra Engineering College | 2nd Year, 3rd Semester" />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#06b6d4; --glass: rgba(255,255,255,0.03);
+      --radius:14px; --maxw:1000px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:linear-gradient(180deg,#071027 0%, #071827 100%); color:#e6eef6; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+    .container{max-width:var(--maxw); margin:36px auto; padding:28px;}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:var(--radius); padding:22px; box-shadow: 0 6px 30px rgba(2,6,23,0.6);}
+    header{display:flex; gap:18px; align-items:center; justify-content:space-between}
+    .profile{display:flex; gap:16px; align-items:center}
+    .avatar{width:92px; height:92px; border-radius:16px; background:linear-gradient(135deg,var(--accent), #7c3aed); display:flex; align-items:center; justify-content:center; font-weight:700; font-size:28px; color:#021019}
+    h1{margin:0; font-size:22px}
+    p.lead{margin:6px 0 0; color:var(--muted); font-size:14px}nav a{color:var(--muted); text-decoration:none; margin-left:14px; font-size:14px}
+.grid{display:grid; grid-template-columns: 1fr 320px; gap:18px; margin-top:18px}
+
+/* Left column */
+.about, .projects, .education, .skills, .contact{margin-bottom:16px}
+.section-title{display:flex; align-items:center; gap:10px; margin-bottom:10px}
+.section-title h3{margin:0; font-size:16px}
+.badge{font-size:12px; color:var(--accent); padding:4px 8px; background:var(--glass); border-radius:999px}
+
+.bio{color:var(--muted); font-size:14px; line-height:1.6}
+.list{display:flex; flex-direction:column; gap:12px}
+
+.project{background:rgba(255,255,255,0.02); padding:12px; border-radius:12px}
+.project h4{margin:0 0 6px}
+.project p{margin:0; color:var(--muted); font-size:13px}
+.skills-list{display:flex; flex-wrap:wrap; gap:8px}
+.skill{padding:8px 10px; background:rgba(255,255,255,0.02); border-radius:10px; font-size:13px; color:var(--muted)}
+
+/* Right column */
+.side-card{position:sticky; top:28px}
+.stat{display:flex; justify-content:space-between; padding:10px 0; border-bottom:1px dashed rgba(255,255,255,0.03)}
+.contact a{display:inline-block; margin-top:10px; text-decoration:none; padding:10px 14px; border-radius:10px; background:linear-gradient(90deg,var(--accent), #7c3aed); color:#021019; font-weight:600}
+
+footer{margin-top:22px; color:var(--muted); font-size:13px; text-align:center}
+
+/* responsive */
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr;}
+  .side-card{position:relative; top:auto}
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="profile">
+          <div class="avatar">KK</div>
+          <div>
+            <h1>Kavin — Cyber Security Student</h1>
+            <p class="lead">Mahendra Engineering College · 2nd Year, 3rd Semester</p>
+          </div>
+        </div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header><main class="grid">
+    <section>
+      <div id="about" class="about">
+        <div class="section-title"><h3>About me</h3><span class="badge">Cybersecurity Student</span></div>
+        <p class="bio">Hi — naan Kavin. Naan Mahendra Engineering College-la cyber security padikuren. Interest areas: network security, web app pentesting, digital forensics, and secure coding. Currently studying in 2nd year (3rd semester). I like building small tools, CTFs solve pannanum, and learning new attack/defense techniques.</p>
+      </div>
+
+      <div id="projects" class="projects">
+        <div class="section-title"><h3>Selected Projects</h3></div>
+        <div class="list">
+          <div class="project">
+            <h4>1) Mini Web CTF — Local Lab</h4>
+            <p>Built a small intentionally-vulnerable web app for practicing XSS/SQLi and wrote walkthroughs. Tech: Flask, SQLite, Docker.</p>
+          </div>
+
+          <div class="project">
+            <h4>2) Network Scanner Tool (Student)</h4>
+            <p>Simple Python-based scanner to enumerate open ports and identify services on a lab network. Learned socket programming and Nmap scripting basics.</p>
+          </div>
+
+          <div class="project">
+            <h4>3) Forensics Challenge — Image Analysis</h4>
+            <p>Completed an image steganography challenge; extracted hidden payload using steg tools and Python scripts.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="education" class="education">
+        <div class="section-title"><h3>Education</h3></div>
+        <div class="list">
+          <div>
+            <strong>Mahendra Engineering College</strong>
+            <div style="color:var(--muted); font-size:13px">B.E. — Cyber Security (ongoing) · 2nd Year, 3rd Semester</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills" class="skills">
+        <div class="section-title"><h3>Skills & Tools</h3></div>
+        <div class="skills-list">
+          <span class="skill">Linux (basic)</span>
+          <span class="skill">Python</span>
+          <span class="skill">Wireshark</span>
+          <span class="skill">Nmap</span>
+          <span class="skill">Burp Suite (basic)</span>
+          <span class="skill">Web security (XSS, SQLi)</span>
+          <span class="skill">Digital Forensics</span>
+        </div>
+      </div>
+
+      <div id="contact" class="contact">
+        <div class="section-title"><h3>Contact</h3></div>
+        <p style="color:var(--muted); font-size:14px">Interested in collab or mentorship? Reach out:</p>
+        <p style="margin:8px 0 0">Email: <a href="mailto:kavin@example.com" style="color:var(--accent); text-decoration:underline">kavin@example.com</a></p>
+        <p style="margin:6px 0 0; color:var(--muted); font-size:13px">(Replace the email with your real address before publishing.)</p>
+      </div>
+    </section>
+
+    <aside>
+      <div class="side-card card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <strong>Quick Stats</strong>
+            <div style="color:var(--muted); font-size:13px">Student · 2nd Year</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:18px; font-weight:700">Mahendra</div>
+            <div style="color:var(--muted); font-size:12px">Chennai, India</div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <div class="stat"><div>CTF Participation</div><div style="color:var(--accent)">Beginner</div></div>
+          <div class="stat"><div>Preferred Language</div><div style="color:var(--accent)">Python</div></div>
+          <div class="stat"><div>Availability</div><div style="color:var(--accent)">Part-time</div></div>
+        </div>
+
+        <div style="margin-top:12px; text-align:center">
+          <a href="#contact">Message Me</a>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Kavin — Cyber Security Student. Built for portfolio.</div>
+  </footer>
+</div>
+
+  </div>  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+
+    // small helper: open mail client when `Message Me` clicked
+    document.querySelectorAll('a[href="#contact"]').forEach(a => a.addEventListener('click', (e)=>{ e.preventDefault(); window.location.href = 'mailto:kavin@example.com'; }));
+  </script></body>
+</html>
